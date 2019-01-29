@@ -9,7 +9,7 @@ const Todos = (props) => {
             <h2>{props.title}</h2>
             <ul>
                 {props.items.map((item, index)=>{
-                    return <li key={{}+index}><input type="checkbox"/>{item}</li>;
+                    return <li key={index}><input type="checkbox" checked={item.completed}/>{item.name}</li>;
                 })}
             </ul>
         </div>
